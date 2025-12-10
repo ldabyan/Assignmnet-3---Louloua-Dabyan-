@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Louloua Dabyan — Portfolio</title>
+
+<style>
+/* ================= GLOBAL STYLES ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #FCF6F4;   /* light background */
+  color: #374F42;              /* deep forest green text */
+}
+
+/* Centered 1200px layout */
+.main-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+/* ================= NAVIGATION ================= */
+
+header {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/* HORIZONTAL NAVIGATION FIX */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #374F42;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  border-bottom-color: #374F42;
+}
+
+/* ================= HERO ================= */
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 30px 0;
+}
+
+h1 {
+  font-size: 52px; 
+  margin-bottom: 8px;
+  margin-top: -10px; /* shift up */
+}
+
+.tagline {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.hero-image {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 2px solid #374F42;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 2px solid #374F42;
+}
+
+/* ================= PROJECTS ================= */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  border: 2px solid #374F42;
+}
+
+.project-thumb img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #374F42;
+}
+
+.project-meta {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project-tools {
+  font-size: 13px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  margin-top: 40px;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #374F42;
+}
+
+/* LINKS */
+a:link { color: #374F42; }
+a:visited { color: #374F42; opacity: 0.9; }
+a:hover { color: #374F42; text-decoration: underline; }
+a:active { opacity: 0.6; }
+
+</style>
+</head>
+
+
+
+<body>
+<div class="main-wrapper">
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="logo">LOULOUA DABYAN</div>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<!-- ================= HERO / ABOUT ================= -->
+<section id="about">
+  <div class="hero-grid">
+
+    <div class="hero-text">
+      <h1>Hi, I'm Lulu.</h1>
+
+      <p class="tagline">
+        Product-minded designer & second-year GBDA student at the University of Waterloo.
+      </p>
+
+      <!-- UPDATED PARAGRAPH -->
+      <p>
+        I’m a second-year Global Business & Digital Arts student at the University of Waterloo 
+        with a growing passion for product design and for creating thoughtful, polished 
+        digital experiences.       </p>
+    </div>
+
+    <div class="hero-image">
+      <img src="hero.jpg" alt="Lulu in Paris at sunset">
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <p>A mix of work from GBDA projects, CS105 coding, and creative storytelling.</p>
+
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="notesum.jpg" alt=""></div>
+    <div class="gallery-item"><img src="activia.jpg" alt=""></div>
+    <div class="gallery-item"><img src="flappybee.jpg" alt=""></div>
+    <div class="gallery-item"><img src="story.jpg" alt=""></div>
+  </div>
+</section>
+
+
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <h2>Selected Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <article class="project-card">
+      <div class="project-thumb"><img src="notesum.jpg"></div>
+      <div class="project-meta">UX / Product Design</div>
+      <h3>NoteSum — AI-Powered Student Note Summaries</h3>
+      <p>
+        An app concept that analyzes students’ messy notes and generates one
+        clear, focused summary for easier studying.
+      </p>
+      <p class="project-tools"><strong>Tools:</strong> Figma, Illustrator, Photoshop, Firefly AI</p>
+    </article>
+
+    <!-- PROJECT 2 -->
+    <article class="project-card">
+      <div class="project-thumb"><img src="activia.jpg"></div>
+      <div class="project-meta">Brand Identity / Packaging</div>
+      <h3>Activia Rebrand — Modern Visual Identity</h3>
+      <p>
+        A full packaging refresh for Activia with a playful, energetic,
+        Gen-Z-friendly visual system.
+      </p>
+      <p class="project-tools"><strong>Tools:</strong> Illustrator, Photoshop, Adobe Express, Firefly AI</p>
+    </article>
+
+    <!-- PROJECT 3 -->
+    <article class="project-card">
+      <div class="project-thumb"><img src="flappybee.jpg"></div>
+      <div class="project-meta">Creative Coding</div>
+      <h3>Flappy Bee — p5.js Game</h3>
+      <p>
+        A playful side-scrolling game built for CS105, exploring collision
+        detection, scoring, and character animation.
+      </p>
+      <p class="project-tools"><strong>Tools:</strong> p5.js, JavaScript, VS Code</p>
+    </article>
+
+    <!-- PROJECT 4 -->
+    <article class="project-card">
+      <div class="project-thumb"><img src="story.jpg"></div>
+      <div class="project-meta">Digital Storytelling</div>
+      <h3>My First Time Living Alone</h3>
+      <p>
+        A multimedia narrative exploring independence, identity,
+        and the emotional experience of living alone for the first time.
+      </p>
+      <p class="project-tools"><strong>Tools:</strong> Premiere Pro, Audition</p>
+    </article>
+
+  </div>
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-grid">
+
+    <div>
+      <!-- UPDATED PARAGRAPH -->
+      <p>
+        I currently study Global Business & Digital Arts at the 
+        <a href="https://uwaterloo.ca" target="_blank">University of Waterloo</a>, 
+        where I explore product design, business, and creative technology.
+      </p>
+
+      <p><strong>Email:</strong> 
+        <a href="mailto:ldabyan@uwaterloo.ca">ldabyan@uwaterloo.ca</a>
+      </p>
+    </div>
+
+    <div>
+      <p><strong>Let’s connect!</strong></p>
+      <p>
+        Feel free to reach out — I love talking about design, learning,
+        and creating tools that support students.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer>
+  © 2025 Louloua Dabyan — Built for GBDA 228
+</footer>
+
+</div>
+</body>
+
